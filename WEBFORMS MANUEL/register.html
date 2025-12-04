@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICT Club Registration Form</title>
+<style>
+  body{
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    max-width: 800px;
+    margin: auto;
+  }
+  th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: left; 
+    vertical-align: top;
+  }
+  input, input[type="email"], textarea, select { 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    border: none; 
+    font-family: sans-serif;
+    font-size: inherit;
+    border-bottom: 1px solid transparent; 
+  }
+  input[type="checkbox"], input[type="radio"] {
+    width: auto; 
+    margin-right: 5px; 
+    vertical-align: middle;
+  }
+  .full-width { 
+    width: 100%; 
+  }
+  .buttons-container {
+    text-align: center;
+    padding-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .skills-list > div {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+<form>
+<table>
+  <tr>
+    <td rowspan="2">Name</td>
+    <td>Surname</td>
+    <td>First Name</td>
+    <td>Middle Name</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="surname"></td>
+    <td><input type="text" name="firstname"></td>
+    <td><input type="text" name="middlename"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Grade Level</td>
+    <td colspan="2">Section</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="text" name="grade_level"></td>
+    <td><input type="text" name="section"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Address</td>
+    <td>No.</td>
+    <td>Street</td>
+    <td>Barangay / City</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="address_no"></td>
+    <td><input type="text" name="street"></td>
+    <td><input type="text" name="barangay_city"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Birthday</td>
+    <td>Month</td>
+    <td>Date</td>
+    <td>Year / Age</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="birth_month"></td>
+    <td><input type="text" name="birth_date"></td>
+    <td><input type="text" name="birth_year_age"></td>
+  </tr>
+  <tr>
+    <td>Contact No</td>
+    <td colspan="3">E-Mail Add</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="contact_no"></td>
+    <td colspan="3"><input type="text" name="email"></td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td colspan="3">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </td>
+  </tr>
+  <tr>
+    <td>Are you a Class Officer in your section?</td>
+    <td colspan="3">
+      <input type="radio" id="yes_officer" name="class_officer" value="yes">
+      <label for="yes_officer">Yes</label>
+      <input type="radio" id="no_officer" name="class_officer" value="no">
+      <label for="no_officer">No</label>
+    </td>
+  </tr>
+  <tr>
+    <td>If yes, what position?</td>
+    <td colspan="3"><input type="text" name="officer_position" class="full-width"></td>
+  </tr>
+  <tr>
+    <td>Other club involvement and membership</td>
+    <td colspan="3"><input type="text" name="other_club_involvement" class="full-width"></td>
+  </tr>
+  <tr>
+    <td colspan="4">What computer knowledge and skills do you have (Check all that applies)</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <div class="skills-list">
+        <div>
+          <input type="checkbox" id="office_productivity" name="skills" value="office_productivity">
+          <label for="office_productivity">Office Productivity (MS Word, Excel, PowerPoint, Publisher)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="photo_editing" name="skills" value="photo_editing">
+          <label for="photo_editing">Photo Editing</label>
+        </div>
+        <div>
+          <input type="checkbox" id="web_designing" name="skills" value="web_designing">
+          <label for="web_designing">Web Designing</label>
+        </div>
+        <div>
+          <input type="checkbox" id="computer_hardware_servicing" name="skills" value="computer_hardware_servicing">
+          <label for="computer_hardware_servicing">Computer Hardware Servicing (PC Assembly)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="graphics_animation" name="skills" value="graphics_animation">
+          <label for="graphics_animation">Graphics and Animation</label>
+        </div>
+        <div>
+          <input type="checkbox" id="others_skills" name="skills" value="others">
+          <label for="others_skills">Others (please specify)</label>
+        </div>
+      </div>
+      <input type="text" name="others_skills_specify" class="full-width">
+    </td>
+  </tr>
+  <tr>
+    <td>What talents do you have?</td> 
+    <td colspan="3"><textarea name="talents" rows="3" class="full-width"></textarea></td>
+  </tr>
+  <tr>
+    <td>Why do you want to join this club?</td>
+    <td colspan="3"><textarea name="why_join" rows="3" class="full-width"></textarea></td>
+  </tr>
+  <tr>
+    <td>What do you know about this club?</td>
+    <td colspan="3"><textarea name="know_about_club" rows="3" class="full-width"></textarea></td>
+  </tr>
+  <tr>
+    <td>What do you expect from this club?</td>
+    <td colspan="3"><textarea name="expect_from_club" rows="3" class="full-width"></textarea></td>
+  </tr>
+  <tr>
+    <td>What can you contribute to this club?</td>
+    <td colspan="3"><textarea name="contribute_to_club" rows="3" class="full-width"></textarea></td>
+  </tr>
+</table>
+
+<div class="buttons-container">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="window.print()">Print</button>
+</div>
+</form>
+</body>
+</html>

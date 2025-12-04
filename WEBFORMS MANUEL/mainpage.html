@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sta. Elena High School - ICT Login</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            width: 320px;
+            text-align: center; 
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .register-area {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .register-btn {
+            color: 29E31B;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        
+        <img src="sehslogo.png" alt="Sta. Elena High School Logo" class="logo">
+
+        <h1>Sta. Elena High School</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="register-area">
+                Not yet a member? 
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
