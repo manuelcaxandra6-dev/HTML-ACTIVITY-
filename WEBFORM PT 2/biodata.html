@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jollibee Employee Biodata Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://i.pinimg.com/1200x/b0/79/b8/b079b853da0d71b82e8c3694a908996d.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        h1 {
+            color: #d40000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #d40000;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a80000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jollibee Employee Biodata Form</h1>
+
+    <form action="/submit_biodata" method="post">
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="education">Highest Education Level:</label></td>
+                <td>
+                    <select id="education" name="education" required>
+                        <option value="">Select Education</option>
+                        <option>High School</option>
+                        <option>Vocational</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skills">Skills / Certifications:</label></td>
+                <td><textarea id="skills" name="skills" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="experience">Previous Work Experience:</label></td>
+                <td><textarea id="experience" name="experience" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Biodata">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

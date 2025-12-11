@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jollibee Customer Survey</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 50px;
+            background-image: url('https://i.pinimg.com/1200x/b0/79/b8/b079b853da0d71b82e8c3694a908996d.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        h2, h3 {
+            color: #d40000;
+            text-align: center;
+        }
+
+        p.description {
+            width: 600px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            width: 800px;
+            border-radius: 30px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #d40000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #a80000;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 20px;
+            border: 0;
+        }
+
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Jollibee Customer Survey</h2>
+    <p class="description">
+        We want to hear from you! Please take a few moments to share your experience at Jollibee. Your feedback helps us serve you better and make every visit enjoyable.
+    </p>
+
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required>
+
+            <label>What do you like the most at Jollibee? (Select all that apply)</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="checkbox1" value="Sundae"> Sundae<br>
+                <input type="checkbox" name="checkbox2" value="Burger"> Burger<br>
+                <input type="checkbox" name="checkbox3" value="Chickenjoy"> Chickenjoy<br>
+                <input type="checkbox" name="checkbox4" value="Chicken Fillet"> Chicken Fillet<br>
+                <input type="checkbox" name="checkbox5" value="Fries"> Fries<br>
+                <input type="checkbox" name="checkbox6" value="Jolly Spaghetti"> Jolly Spaghetti<br>
+            </div>
+
+            <label>How often do you visit Jollibee?</label>
+            <div class="radio-group">
+                <input type="radio" name="radio1" value="Weekly" required> Weekly<br>
+                <input type="radio" name="radio2" value="Monthly"> Monthly<br>
+                <input type="radio" name="radio3" value="Rarely"> Rarely<br>
+                <input type="radio" name="radio4" value="First time"> First time visiting<br>
+            </div>
+
+            <label for="favorite-meal">Choose your favorite Jollibee meal:</label>
+            <select id="favorite-meal" name="favorite-meal" required>
+                <option value="" disabled selected>Select your favorite meal</option>
+                <option>Chickenjoy</option>
+                <option>Jolly Spaghetti</option>
+                <option>Yumburger</option>
+                <option>Palabok Fiesta</option>
+                <option>Burger Steak</option>
+                <option>Sundae</option>
+            </select>
+
+            <label for="comments">Any suggestions or comments?</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Write your thoughts here..."></textarea>
+
+            <input type="submit" value="Submit Survey">
+        </form>
+    </div>
+
+    <h3>Find Your Nearest Jollibee</h3>
+    <p class="description">Use the map below to locate the nearest Jollibee branch near you.</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2858470250117!2d121.05953131532862!3d14.647047289855888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6b9c74f1e3f%3A0xf33c416b5eb63bb2!2sJollibee!5e0!3m2!1sen!2sph!4v1600000000000!5m2!1sen!2sph" 
+        width="600" 
+        height="450" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</body>
+</html>
