@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Tale</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .story-part {
+            display: none;
+        }
+
+
+        #beginning {
+            display: block;
+        }
+    </style>
+    <script>
+        function showPart(id) {
+            document.getElementById("beginning").style.display = "none";
+            document.getElementById("middle").style.display = "none";
+            document.getElementById("ending").style.display = "none";
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+<nav>
+    <a href="index.html">The Portal</a>
+    <a href="story.html">The Tale</a>
+    <a href="about.html">Behind the Legend</a>
+    <a href="profile.html">Meet the Author</a>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>The Tale of the Amanikable</h2>
+        <button onclick="showPart('beginning')">Beginning</button>
+        <button onclick="showPart('middle')">Middle</button>
+        <button onclick="showPart('ending')">Ending</button>
+    </div>
+
+    
+    <section id="beginning" class="section story-part">
+        <h3>Beginning</h3>
+        <p>
+            Long ago, in the vast archipelago of the Philippines, the seas were ruled by
+            Amanikable, the fearsome god of storms and waves. His wrath could sink ships in
+            an instant, yet he also protected the islands from invaders. Among the coastal
+            villages, sailors whispered tales of his fury, and children grew up in awe of
+            his power. In one small fishing village lived Lino, a young fisherman who admired
+            Amanikable from afar. Though he feared the god’s anger, he dreamed of navigating
+            the seas with courage and honor.
+        </p>
+        <img src="https://i.pinimg.com/1200x/5e/f7/3e/5ef73eadea8c84dd88ac74dfe03cf5b7.jpg" alt="Beginning Image">
+    </section>
+
+    <section id="middle" class="section story-part">
+        <h3>Middle</h3>
+        <p>
+            One morning, a merchant ship brimming with precious goods sailed recklessly into
+            Amanikable’s domain, ignoring the villagers’ warnings. Enraged, the sea god summoned
+            towering waves and violent winds that tossed the ship like a toy. Lino, watching
+            from the shore, saw the sailors struggle, and one young man clung desperately to
+            a floating chest of treasures. Without hesitation, Lino grabbed his small boat
+            and rowed into the storm, determined to save the sailor. Waves crashed over him,
+            lightning split the sky, and the winds threatened to overturn his boat, yet he
+            pressed on. From the depths, Amanikable observed, curious about the boy who dared
+            defy his power. Moved by such courage and compassion, Amanikable calmed the seas
+            and guided them safely to shore.
+        </p>
+        <img src="https://i.pinimg.com/736x/c9/20/2b/c9202b4b5df069fe1c546944f322db68.jpg" alt="Middle Image">
+    </section>
+
+    <section id="ending" class="section story-part">
+        <h3>Ending</h3>
+        <p>
+            When Lino returned, the villagers hailed him as a hero, yet he humbly credited
+            Amanikable for sparing their lives. From that day, Amanikable punished arrogance
+            but honored bravery and kindness. Lino continued to sail, teaching others that
+            respect, courage, and compassion could turn even the fiercest storms into
+            protection. The legend of Amanikable endured, a reminder that the mightiest waves
+            could not overpower a noble heart.
+        </p>
+        <img src="https://i.pinimg.com/736x/43/9b/62/439b62a41111cc5bf8a219c0124dca07.jpg" alt="Ending Image">
+    </section>
+</div>
+
+</body>
+</html>
